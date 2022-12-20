@@ -1,0 +1,86 @@
+.main-form {
+  .form-control {
+    border: 1px solid #818181;
+    border-radius: 17px;
+    padding-left: 25px !important;
+    height: calc(1.5em + 0.75rem + 10px);
+
+    &::placeholder {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #818181;
+    }
+  }
+
+  .form-buttons {
+    .btn-main {
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+      padding: 12px 30px;
+      width: 200px;
+    }
+
+    .btn-secondary {
+      color: $color-main;
+      background-color: transparent;
+      border: unset;
+
+      &:focus {
+        color: $color-main;
+        background-color: transparent !important;
+        box-shadow: unset !important;
+      }
+    }
+
+    @include media-tablet-down {
+      flex-direction: column;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #818181;
+  border-radius: 17px;
+  padding-left: 25px !important;
+  height: calc(1.5em + 0.75rem + 10px);
+  align-items: center;
+  display: flex;
+
+  .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 9px;
+    right: 17px;
+    width: 20px;
+  }
+
+  .select2-selection__rendered {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #818181;
+    padding-left: 0 !important;
+  }
+}
+
+.register {
+  display: none;
+}

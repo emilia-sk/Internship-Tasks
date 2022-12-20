@@ -1,0 +1,29 @@
+@mixin media-desktop-up {
+  @media all and (min-width: $breakpoint-desktop + 0.05px) {
+    @content;
+  }
+}
+
+@mixin media-desktop-down {
+  @media all and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin media-tablet-up {
+  @media all and (min-width: $breakpoint-tablet + 0.05px) {
+    @content;
+  }
+}
+
+@mixin media-tablet-down {
+  @media all and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin media-mobile-down {
+  @media all and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}

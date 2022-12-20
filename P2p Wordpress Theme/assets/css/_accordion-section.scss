@@ -1,0 +1,86 @@
+.accordion-section {
+  background-image: url(../img/bg-blue.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% 43%;
+  counter-reset: section;
+
+  @include media-tablet-down {
+    background-size: unset;
+    padding-top: 0;
+
+    .devider-main {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #accordion {
+    margin-top: 70px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    .card-header {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid transperant;
+
+      h5 {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+
+        .btn-link {
+          color: #000000;
+          text-align: left;
+        }
+
+        &::before {
+          counter-increment: section;
+          content: counter(section);
+          align-self: center;
+          color: #fff;
+          background-color: $color-main;
+          border-radius: 50%;
+          padding: 10px 15px;
+        }
+      }
+
+      .card-arrow {
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    .card-body-links {
+      a {
+        color: $color-main;
+      }
+    }
+  }
+
+  .fllying-objects {
+    position: absolute;
+
+    &.left-side {
+      top: 30%;
+      left: -15%;
+      transform: rotate(180deg);
+    }
+
+    &.right-side {
+      bottom: 7%;
+      right: -15%;
+      transform: rotate(180deg);
+    }
+  }
+}

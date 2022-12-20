@@ -1,0 +1,64 @@
+.two-columns-text-img,
+.register {
+  background-image: url("../img/bg-blue.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% 77%;
+
+  @include media-tablet-down {
+    background-size: unset;
+  }
+
+  .fllying-objects {
+    position: absolute;
+    top: -15%;
+    left: -10%;
+  }
+
+  .devider-main {
+    @include media-tablet-down {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .mobile-bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.contacts {
+    .two-images {
+      .img-1 {
+        img {
+          width: 43%;
+
+          @include media-desktop-down {
+            width: 50%;
+          }
+        }
+      }
+
+      .img-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(15%, -37%);
+      }
+    }
+  }
+}
+
+.contacts {
+  .two-images {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

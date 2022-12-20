@@ -1,0 +1,151 @@
+.text-section {
+  .breadcrumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    margin-bottom: 2rem;
+
+    .breadcrumb-item {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration-line: underline;
+
+      a {
+        color: #564493;
+      }
+
+      &.active {
+        text-decoration: none;
+
+        &::before {
+          content: ">";
+        }
+      }
+    }
+  }
+
+  .heading-main {
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-nav {
+    display: block;
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        &::marker {
+          color: $color-main;
+        }
+      }
+    }
+
+    .nav-item {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 0;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-decoration: underline;
+      color: $color-main;
+
+      &.active {
+        font-weight: 700;
+        color: $color-main;
+      }
+    }
+  }
+
+  .navbar-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .top-content {
+    @include media-tablet-down {
+      flex-direction: column;
+
+      .heading-main {
+        text-align: left;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .contain {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    a {
+      color: $color-main;
+    }
+
+    .devider-main {
+      margin-top: 70px;
+    }
+  }
+
+  .main-list {
+    padding-left: 0;
+
+    @include media-tablet-down {
+      padding-left: 12px;
+    }
+  }
+
+  .secondary-list {
+    padding-left: 20px;
+  }
+
+  .secondary-list-1 {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .text-content {
+    margin: 20px 0;
+  }
+
+  .flying-objects {
+    position: absolute;
+
+    &.left-side {
+      top: 50px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &.right-side {
+      bottom: 50px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.height-100 {
+  height: 100%;
+}

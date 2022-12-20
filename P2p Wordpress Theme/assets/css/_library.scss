@@ -1,0 +1,120 @@
+.video-section {
+  .heading-main {
+    @include media-tablet-down {
+      font-size: 26px;
+    }
+  }
+
+  .bottom-heading {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .video-container {
+    position: relative;
+
+    .content {
+      .video-img {
+        border: 5px solid $color-main;
+        border-radius: 11px;
+      }
+    }
+
+    .video-title {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+      color: #ffffff;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .video-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .slider {
+    margin-top: 40px;
+
+    .slick-slide {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .slick-dots {
+      bottom: -35px;
+
+      li button:before,
+      li.slick-active button:before {
+        color: transparent;
+        opacity: 1;
+      }
+
+      li button:before {
+        background-color: transparent;
+        border: 1px solid $color-main;
+        border-radius: 50%;
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+      }
+      li.slick-active button:before {
+        background-color: $color-main;
+      }
+    }
+
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      right: -5%;
+      transform: translateY(-50%);
+
+      //   @include media-tablet-down {
+      //     right: -3%;
+      //   }
+    }
+
+    .slick-prev {
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      transform: translateY(-50%);
+
+      //   @include media-tablet-down {
+      //     left: -3%;
+      //   }
+    }
+  }
+
+  .fllying-objects {
+    position: absolute;
+
+    &.left-side {
+      top: 50px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &.right-side {
+      bottom: 50px;
+      right: 0;
+      z-index: -1;
+      // transform: translateY(100%);
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.achievements {
+  .badges {
+    flex-wrap: wrap;
+
+    .badg {
+      margin: 0 15px;
+      width: 160px;
+
+      .badg-name {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: $color-main;
+      }
+
+      @include media-tablet-down {
+        width: 140px;
+      }
+    }
+  }
+
+  .unlocked-achievements {
+    .achievement {
+      padding: 30px 40px;
+      background: #ffffff;
+      box-shadow: 0px 4px 20px rgba(86, 68, 147, 0.15);
+      border-radius: 9px;
+
+      .ach-heading {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: $color-main;
+
+        @include media-tablet-down {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      .ach-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #818181;
+
+        span {
+          font-weight: 700;
+          color: $color-main;
+        }
+      }
+    }
+  }
+
+  .fllying-objects {
+    position: fixed;
+
+    &.left-side {
+      top: 30%;
+      left: 0;
+      z-index: -10;
+
+      @include media-tablet-down {
+        left: -25%;
+      }
+    }
+
+    &.right-side {
+      bottom: 20%;
+      right: 0;
+      z-index: -10;
+
+      @include media-tablet-down {
+        right: -25%;
+      }
+    }
+  }
+}

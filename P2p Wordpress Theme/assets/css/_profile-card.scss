@@ -1,0 +1,99 @@
+.profile-card .card_ .card-info > div {
+  width: unset !important;
+}
+
+.profile-card {
+  z-index: 22;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+    background-color: #f3f8fb;
+  }
+
+  .light {
+    color: #bbbbbb !important;
+  }
+
+  .dark {
+    color: #848484 !important;
+  }
+
+  .main-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .border-top {
+    border-top: 1px solid #f3f3f3;
+  }
+
+  .card_ {
+    &::after {
+      left: 8%;
+      top: -2%;
+      width: 100%;
+    }
+  }
+
+  .profile-card-options {
+    padding-left: 10%;
+
+    @include media-tablet-down {
+      margin-top: 50px !important;
+      padding-left: 4%;
+    }
+
+    .profile-links {
+      &:first-child {
+        margin-right: 15%;
+      }
+
+      a {
+        display: block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: $color-main;
+      }
+    }
+  }
+
+  .fllying-objects {
+    position: absolute;
+
+    &.left-side {
+      top: 10%;
+      left: 9%;
+      z-index: 99999;
+    }
+
+    &.right-side {
+      bottom: 10%;
+      right: 5%;
+    }
+  }
+
+  @include media-tablet-down {
+    width: 100%;
+
+    .card_ {
+      &::after {
+        left: 0;
+        top: 19%;
+      }
+    }
+
+    .border-mobile {
+      border-top: 1px solid #f3f3f3;
+    }
+  }
+}

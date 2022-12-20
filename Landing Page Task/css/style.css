@@ -1,0 +1,920 @@
+body {
+    font-size: 14px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/*-- Header --*/
+
+header {
+    padding-top: 20px;
+}
+
+.hero-blobs-1{
+    position: absolute;
+    margin-left:-30px;
+}
+
+.hero-blobs-2{
+    position: absolute;
+    margin-left:1080px;
+    margin-top:110px;
+}
+
+.btn-header {
+    width: 95px;
+    height: 26px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/*-- About section --*/
+
+#about-section {
+    background-image: url(../img/img-hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-top-gradient {
+    background: linear-gradient(180deg, #FFFFFF 10.69%, rgba(255, 255, 255, 0) 50%);
+    padding: 50px;
+}
+
+.first-title-about {
+    font-size: 40px;
+    text-align: center;
+}
+
+.second-title-about {
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    margin-top: 130px;
+    margin-bottom: 126px;
+}
+
+.orange-italic {
+    color: #F26F52;
+}
+
+.hero-bottom-gradient {
+    background: linear-gradient(0.17deg, #fff 4.86%, rgba(255, 255, 255, 0.747383) 65.27%, rgba(255, 255, 255, 0) 96.92%);
+    padding-bottom: 120px;
+}
+
+/*-- CF section --*/
+
+.cf-section-title-1 {
+    font-size: 32px;
+    background: linear-gradient(180deg, #EF4823 -90.64%, #EF4823 -54.25%, #EA4728 -35.72%, #E14437 -4.72%, #D23F4D 34.98%, #BD3965 81.76%, #A32F7F 133.99%, #942C8E 160.53%, #942C8E 218.76%);
+    color: white;
+    display: inline-block;
+    width: 350px;
+    margin-left: -15px;
+    padding-right: 5px;
+}
+
+.cf-section-title-2 {
+    font-size: 32px;
+    padding-left: 5px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+    justify-content: center;
+}
+
+.number-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+    color: white;
+}
+
+.number-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+.blob1 {
+    margin-top: -250px;
+    margin-right: 10px;
+    width: 330px;
+    position: relative;
+    z-index: -2;
+}
+
+.blob-orange {
+    margin-top: -280px;
+    width: 330px;
+    z-index: -2;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+        transform: translatex(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+        transform: translatex(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+        transform: translatex(0px);
+	}
+}
+
+#cap-focus {
+    padding-bottom: 100px;
+}
+
+/*-- Company history section --*/
+
+#company-history {
+    background-image: url(../img/company-history.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F3F3F3;
+
+}
+
+.section-title-1 {
+    font-size: 32px;
+    background: #D74146;
+    color: white;
+    display: inline-block;
+    width: 350px;
+    margin-left: -15px;
+    padding-right: 5px;
+}
+
+.section-title-2 {
+    font-size: 32px;
+    padding-left: 5px;
+}
+
+.row-history {
+    padding-left: 100px;
+}
+
+.history-date {
+    position: relative;
+    transition: all 1s;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    z-index:3;
+}
+
+.date-bold {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.64px;
+}
+
+.history-date::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 123px;
+    height: 123px;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/polygon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index:-1;
+}
+
+.col-history-right {
+    margin-left: -40px;
+    opacity:0;
+}
+
+.col-history-left {
+    opacity:0;
+}
+
+.side-text-1 {
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    color: #E5E5E5;
+    opacity: 0.5;
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin-top: 350px;
+    margin-left: -180px;
+    position: absolute;
+}
+
+
+.side-text-2 {
+    font-size: 56px;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    color: #E5E5E5;
+    opacity: 0.5;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+
+/*-- Company about cards section --*/
+#about-section-cards{
+    background-color: #F3F3F3;
+    overflow: hidden;
+}
+
+.card-horizontal{
+    transform: skew(-10deg);
+    border-radius: 50px;
+    padding:20px;
+}
+
+.card-body-main{
+    margin-left: 50px;
+    margin-top:40px;
+}
+
+.card-img{
+    transform: skew(10deg);
+}
+
+.member-position{
+ font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+.member-name{
+font-weight: 800;
+font-size: 32px;
+line-height: 35px;
+}
+
+.card-sm-text{
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+.employee-photo-blob{
+    position:absolute;
+    margin-left:-360px;
+    margin-top:-230px;
+    z-index:-1;
+}
+
+.img-signature{
+    padding-bottom:20px;
+}
+.card-bg-dots-1{
+    position:absolute;
+    margin-left:-200px;
+    margin-top:30px;
+}
+
+.card-bg-dots-2{
+    position:absolute;
+    margin-left:770px;
+    margin-top:30px;
+}
+
+.card-second{
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.cards-2-blobs{
+    position:absolute;
+    margin-top:12px;
+    border-radius: 20px;
+    margin-left:243px;
+
+}
+
+.cards-dots-middle{
+    position:absolute;
+    margin-left:495px;
+    margin-top:70px;
+}
+
+.card-third{
+height: 440px;
+border-radius:30px;
+}
+
+.employee-photo-third{
+    margin:0 auto;
+    margin-top:-30px;
+}
+
+.text-card-3{
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+}
+
+/*-- Video Section --*/
+
+#video-section{
+    background-color: #F26F52;
+    padding-bottom:80px;
+}
+
+.video-title-1 {
+    font-size: 32px;
+    background: white;
+    display: inline-block;
+    width: 280px;
+    padding-right: 5px;
+}
+
+.video-title-2 {
+    font-size: 32px;
+    padding-left: 5px;
+    color: #FFFFFF;
+}
+
+.video{
+    z-index:1;
+}
+
+.video-blob-1{
+    position: absolute;
+    margin-left:0px;
+    margin-top:-400px;
+}
+
+.video-blob-2{
+    position: absolute;
+    margin-left:1120px;
+    margin-top:-400px;
+}
+
+
+
+/*-- Social obligation section --*/
+
+#soc-obligation{
+    padding-bottom:100px;
+}
+
+.soc-obligation-text{
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+.soc-obligation-bold-text{
+    font-size: 20px;
+    font-weight: bold;
+    line-height:24px;
+}
+
+.soc-obligation-text-purple{
+    color: purple;
+    font-weight: bold;
+}
+
+.col-pictures-right{
+    margin-left: auto;
+}
+
+.soc-obligation-dots{
+    position: absolute;
+    margin-left:1140px;
+}
+
+.soc-obligation-blobs{
+    position: absolute;
+    margin-left:1106px;
+    margin-top:-260px;
+
+}
+
+/*-- Contact us section --*/
+
+#contact-us{
+    background-color:#F5F5F5;
+    padding-bottom:100px;
+}
+
+.carousel-bg{
+    position: absolute;
+    margin-top:-50px;
+    margin-left:18px;
+    width: 640px;
+    height: 890px;
+}
+
+.carousel-contact{
+    margin-left:70px;
+}
+
+.carousel-title{
+font-weight: 800;
+font-size: 40px;
+line-height: 49px;
+}
+
+.carousel-text{
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+.carousel-adress{
+font-size: 18px;
+line-height: 20px;
+padding-left:10px;
+}
+
+.carousel-phone{
+    font-size: 18px;
+line-height: 20px;
+}
+
+.carousel-item{
+padding-left:100px;
+color:white;
+}
+
+.adress-icon{
+    position:absolute;
+    margin-left:20px;
+}
+
+.carousel-control-next{
+    margin-right:-70px;
+}
+
+.carousel-control-prev{
+    margin-left:-30px;
+}
+
+.carousel-dots{
+    position: absolute;
+    margin-top:-150px;
+    margin-left:180px;
+}
+
+/*-- Footer --*/
+
+#footer{
+    background-color:black;
+    padding-left:40px;
+}
+
+.row-footer{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footer-title{
+font-weight: 800;
+font-size: 18px;
+line-height: 20px;
+padding-left:15px;
+width:233px;
+}
+
+.footer-links{
+    list-style: none;
+    padding-top:5px;
+    margin-left:-40px;
+    color: white;
+    font-size: 16px;
+    line-height: 17px;
+    display:inline-block;
+}
+
+.img-footer{
+    margin-left:20px;
+}
+
+/*-- Bottom bar --*/
+
+.bottom-bar-title{
+font-weight: 300;
+font-size: 24px;
+line-height: 40px;
+}
+
+.bottom-bar-text-orange{
+color:#F26F52;
+font-weight: bold;
+}
+
+
+/* ----- Responsive media queries - Large Screen ----- */
+@media screen and (min-width: 1200px) {
+
+   /*-- History section --*/
+    .history-text-right-1 {
+        margin-left: 350px;
+        margin-top: -55px;
+    }
+
+    .history-text-left-1 {
+        margin-left: -480px;
+        margin-top: -60px;
+        margin-bottom: -40px;
+    }
+
+    .history-text-right-2 {
+        margin-left: 490px;
+        margin-top: -85px;
+        margin-bottom: -15px;
+    }
+
+    .history-text-left-2 {
+        margin-left: -480px;
+        margin-top: -55px;
+        margin-bottom: 0px;
+    }
+
+    .history-text-right-3 {
+        margin-left: 490px;
+        margin-top: -72px;
+        margin-bottom: 0px;
+    }
+
+    .history-text-left-3 {
+        margin-left: -480px;
+        margin-top: -72px;
+        margin-bottom: 0px;
+    }
+
+    .history-text-right-4 {
+        margin-left: 490px;
+        margin-top: -55px;
+    }
+
+    .history-text-left-4 {
+        margin-left: -480px;
+        margin-top: -72px;
+        margin-bottom: 20px;
+    }
+
+    .history-text-right-5 {
+        margin-left: 490px;
+        margin-top: -65px;
+    }
+
+/*-- Help Section --*/
+
+#help-section{
+    background-color: #F5F5F5;
+    padding-top:60px;
+}
+
+.dna-row{
+    display:flex;
+    padding:160px;
+    padding-bottom:40px;
+}
+
+.dna-col-right{
+    margin-top:210px;
+}
+
+.dna-col-left{
+    margin-top:150px;
+}
+
+.dna-img{
+    width: 400px;
+height: 800px;
+}
+.dna-title{
+font-weight: 800;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: -0.64px;
+}
+
+.dna-text{
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+.dna-link{
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+color: #942C8E;
+text-decoration: none;
+}
+
+.dna-dots-left{
+    position: absolute;
+    margin-top:-790px;
+    margin-left:-180px;
+}
+
+.dna-dots-right{
+    position: absolute;
+    margin-top:-720px;
+    margin-left:980px;
+}
+
+.dna-blobs-1{
+    position: absolute;
+    margin-top:500px;
+}
+
+.dna-blobs-2{
+    position: absolute;
+    margin-left:1249px;
+    margin-top:-160px;
+    
+}
+
+
+}
+
+/* ----- Responsive media queries - Small screen ----- */
+@media screen and (max-width: 480px) {
+
+    .hero-blobs-1{
+        display:none;
+    }
+
+    .hero-blobs-2{
+        display:none;
+    }
+
+    .hero-top-gradient {
+        padding: 30px;
+    }
+
+    .second-title-about {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .hero-bottom-gradient {
+        padding-bottom: 50px;
+    }
+
+    .cf-section-title-1 {
+        width: 300px;
+        display: block;
+        margin-left: -15px;
+        padding-right: 80px;
+    }
+
+    .section-title-1 {
+        width: 300px;
+        display: block;
+        margin-left: -60px;
+        padding-right: 80px;
+    }
+
+    .side-text-1 {
+        display: none;
+    }
+
+    .side-text-2 {
+        display: none;
+    }
+
+    .section-title-1 {
+        padding-right:100px;
+    }
+
+    .card-horizontal{
+        transform: skew(0deg);
+    }
+
+    .card-img{
+        transform: skew(0deg);
+    }
+
+    .card-second{
+        text-align: center;
+    }
+    
+    .employee-photo{
+        margin-left:-55px;
+    }
+    
+    .card-bg-dots-1{
+        display:none;
+    }
+
+    .card-bg-dots-2{
+        display:none;
+    }
+
+    .cards-dots-middle{
+        display:none;
+    }
+
+    .employee-photo-third{
+        margin-top:10px;
+        width:160px;
+        height:160px;
+    }
+
+    #help-section{
+        background-color: #F5F5F5;
+        padding-top:40px;
+        padding-left:20px;
+        
+    }
+    
+    .dna-col-right{
+        margin-top:90px;
+        padding-bottom:100px;
+    }
+    
+    .dna-col-left{
+        margin-top:30px;
+    }
+    
+    .dna-img{
+     position: absolute;
+     margin-left:30px;
+     margin-top:-500px;
+     width: 300px;
+    height: 720px;
+    opacity: 0.3;
+    }
+
+    .dna-title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    }
+    
+    .dna-text{
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    }
+    
+    
+    .dna-dots-left{
+        display: none;
+    }
+    
+    .dna-dots-right{
+        display: none;
+    }
+    
+    .dna-blobs-1{
+        display: none;
+    }
+    
+    .dna-blobs-2{
+        display: none;
+        
+    }
+
+    .video-title-1{
+        margin-left: -180px;
+    }
+
+    .video-col{
+        margin-bottom:30px;
+    }
+
+    .video-blob-1{
+        margin-top:-240px;
+        margin-left:70px;
+    }
+
+    .video-blob-2{
+        margin-left:80px;
+        margin-top:-150px;
+    }
+
+    .soc-obligation-col-left{
+        padding-bottom:50px;
+
+    }
+
+    #contact-us{
+        padding-bottom:50px;
+    }
+
+    .col-planet{
+        margin-top:-50px;
+    }
+
+    .carousel-bg{
+        display:none;
+    }
+    
+    .carousel-contact{
+        margin-left:0px;
+        background-image: url(../img/carousel-bg.png);
+        background-size: cover;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin-top:40px;
+    }
+    
+    .carousel-title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 49px;
+    }
+    
+    .carousel-text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    }
+    
+    .carousel-adress{
+    font-size: 14px;
+    line-height: 20px;
+    padding-left:10px;
+    }
+    
+    .carousel-phone{
+    font-size: 18px;
+    line-height: 20px;
+    }
+    
+    .carousel-item{
+    padding-left:70px;
+    color:white;
+    }
+    
+    .adress-icon{
+        position:absolute;
+        margin-left:20px;
+    }
+    
+    .carousel-control-next{
+        display:none;
+    }
+    
+    .carousel-control-prev{
+        display:none;
+    }
+    
+    .carousel-dots{
+        display:none;
+    }
+
+    .dna-blobs-2{
+        display:none;
+    }
+
+    .dna-dots-right{
+        display:none;
+    }
+
+    .soc-obligation-dots{
+        display:none;
+    }
+
+    .soc-obligation-blobs{
+        display:none;
+    }
+
+    #footer{
+        padding-left:15px;
+    }
+}
+

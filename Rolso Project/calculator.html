@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/offcanvas-style.css" rel="stylesheet">
+
+  <title>Rolso Internship Full Project</title>
+
+</head>
+
+<body>
+
+  <!--Darken screen for offcanvas menu-->
+  <span class="screen-darken"></span>
+
+<!--HEADER-->
+<div class="container-head container-fluid">
+    <header class="head-home-1">
+      <div class="container container-header">
+
+        <!--TOP BAR-->
+        <div class="head-top-bar-1 row py-4 align-items-center">
+          <div class="col-lg-8">
+            <div class="navbar-brand header-brand"><img src="img/logo.png" alt="..."> Rolso </div>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-lg-end">
+            <button class="button-calculator">Calculator</button>
+          </div>
+          <div class="col-lg-2">
+            <button class="button-tracking">Tracking</button>
+          </div>
+        </div>
+        <!--TOP BAR-->
+
+        <!--NAVIGATION-->
+        <div class="row align-items-center">
+          <div class="col-lg-9 col-nav">
+
+            <button data-trigger="navbar_main" class="d-lg-none btn btn-outline-light btn-header-menu" type="button"><i
+                class="fas fa-bars"></i></button>
+
+            <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid">
+                <div class="offcanvas-header">
+                  <button class="btn-close float-end"></button>
+                </div>
+                <ul class="navbar-nav">
+
+                  <li class="nav-item dropdown px-3">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">Home</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown px-3">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown px-3">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown px-3">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">Prices</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown px-3">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown">Contacts</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-end">
+            <p class="header-number">+8 (495) 989 20 11</p>
+          </div>
+        </div>
+        
+        <hr class="navigation-underline">
+
+        <!--NAVIGATION END-->
+
+
+        <div class="container header-title-container bg-light shadow text-center">
+        <div class="row pt-5 pb-3">
+          <h2 class="header-title">Calculator</h2>
+        </div>
+        <div class="row pb-4">
+          <p class="header-text text-dark">Home / Services / Calculator</p>
+        </div>
+        </div>
+
+         </div> 
+    </header>
+</div>
+<!--HEADER END-->
+
+<!--CALCULATOR SECTION-->
+<section class="calculator">
+  <div class="container">
+
+    <div class="row pt-5 mt-3 mb-2 mt-lg-5 mb-lg-5 text-center">
+      <h4 class="section-text-heading py-3"> Calculation form</h4>
+      <p>Morbi at facilisis turpis. Donec pulvinar quam sed libero vehicula posuere.<br>Fusce ligula ipsum, rhoncus non</p>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center pt-5 pt-lg-0">
+        <form>
+
+          <div class="row g-4">
+            <div class="col-sm-4">
+              <label for="form-select-1-calc" class="form-label opacity-75">Truckload type</label>
+              <select class="form-select" id="form-select-1-calc">
+                <option value="1">Value 1</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+    
+            <div class="col-sm-4">
+              <label for="form-select-2-calc" class="form-label opacity-75">Type of service</label>
+              <select class="form-select" id="form-select-2-calc">
+                <option value="1">Value 1</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+    
+            <div class="col-sm-4">
+              <label for="distance-input-calc" class="form-label">Distance (km)</label>
+              <input type="text" class="form-control" id="distance-input-calc" placeholder="1" value="">
+            </div>
+         </div> 
+
+         <div class="row g-4 py-4">
+          <div class="col-sm-3">
+            <label for="weight-input-big" class="form-label">Weight</label>
+            <input type="text" class="form-control" id="weight-input-big" placeholder="1" value="">
+          </div>
+          <div class="col-sm-3">
+            <label for="height-input-big" class="form-label">Height</label>
+            <input type="text" class="form-control" id="height-input-big" placeholder="2" value="">
+          </div>
+          <div class="col-sm-3">
+            <label for="width-input-big" class="form-label">Width</label>
+            <input type="text" class="form-control" id="width-input-big" placeholder="3" value="">
+          </div>
+          <div class="col-sm-3">
+            <label for="lenght-input-big" class="form-label">Lenght</label>
+            <input type="text" class="form-control" id="lenght-input-big" placeholder="4" value="">
+          </div>
+       </div> 
+
+       <div class="col-12 text-center pb-5">
+       <button class="button-dark-blue">Appointment</button>
+       </div>
+
+       
+       </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--CALCULATOR SECTION END-->
+
+<!-- QUALITY SERVICES BLOCK-->
+<div class="container quality-services-block mb-5">
+  <div class="row">
+    <div class="col-12 text-light p-5">
+      <h4 class="section-text-heading text-light">Quality services</h4>
+      <p>Aenean elementum justo et elit imperdiet tincidunt. Aliquam tristique <br>
+        nunc quis mollis pretium. Etiam ut viverra nisl. Nunc ac</p>
+        <button class="button-end-caret">Services<span class="btn-caret"><i class="fas fa-caret-right" aria-hidden="true"></i></span></button>
+    </div>
+  </div>
+</div>
+<!-- QUALITY SERVICES BLOCK END -->
+
+<!-- FOOTER -->
+<footer class="footer-home-1">
+  <div class="container">
+
+    <div class="row text-light p-lg-5">
+        <div class="col-md-12 col-lg-4">
+          <div class="navbar-brand py-4"><img src="img/logo.png" alt="..."> Rolso </div>
+          <p>Nam laoreet est et dui scelerisque, vel rutrum diam fringilla.
+            In nec convallis nisi. Duis vitae ornare massa, vitae iaculis tellus.
+            Sed ultricies tempus metus ut posuere.</p>
+            <div class="row py-3">
+            <button class="social-media-btn mx-2"><i class="fab fa-twitter"></i></button>
+            <button class="social-media-btn mx-2"><i class="fab fa-linkedin-in"></i></button>
+            <button class="social-media-btn mx-2"><i class="fab fa-youtube"></i></button>
+           </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex justify-content-lg-center align-items-lg-center py-md-4">
+          <ul class="footer-links">
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Calculator</li>
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Shipment Tracking</li>
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Services</li>
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Prices</li>
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Trucks</li>
+            <li class="list-item py-2"><i class="fas fa-caret-right"></i> Careers</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4 py-2">
+          <p class="footer-subscribe-heading fw-bold py-2">Subscribe</p>
+          <p>Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum</p>
+          <div class="input-group mb-3 py-4">
+          <input type="email" class="form-control" id="footer-email-input" placeholder="Enter your email">
+          <button class="btn btn-footer-paper-plane"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-light px-md-5 mx-md-5">
+
+        <div class="col-md-12 col-lg-4 p-3 footer-block ft-block-1">
+          <div class="row">
+            <div class="col-md-3 px-2 py-2">
+              <img class="img-phone" src="img/phone.png" alt="...">
+            </div>
+            <div class="col-md-7">
+              <p class="phone-block-text">Phone</p>
+              <p class="fw-bold">+8 (495) 989 20 11</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 p-3 footer-block ft-block-2">
+          <div class="row">
+            <div class="col-md-3 px-2 py-2">
+              <img class="img-phone" src="img/location.png" alt="...">
+            </div>
+            <div class="col-md-9">
+              <p class="phone-block-text">Location</p>
+              <p class="fw-bold">4621 Hill Croft Farm Road</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 p-3 footer-block ft-block-3">
+          <div class="row">
+            <div class="col-md-3 px-2 py-2">
+              <img class="img-phone" src="img/email.png" alt="...">
+            </div>
+            <div class="col-md-6">
+              <p class="phone-block-text">Email</p>
+              <p class="fw-bold">rolso.office@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+        <div class="container">
+        <div class="row text-light py-5 d-flex justify-content-center opacity-75">
+        Merkulove © Rolso Template All rights reserved Copyrights 2021</div></div>
+
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/425e93ca1f.js" crossorigin="anonymous"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom js -->
+  <script src="js/offcanvas-script.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

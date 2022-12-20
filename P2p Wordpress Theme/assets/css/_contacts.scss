@@ -1,0 +1,27 @@
+.contacts {
+  .column-content {
+    @include media-tablet-down {
+      text-align: center;
+    }
+
+    .btn-main {
+      padding: 13px 54px;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .fllying-objects {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    @include media-desktop-down {
+      right: -8%;
+    }
+  }
+}

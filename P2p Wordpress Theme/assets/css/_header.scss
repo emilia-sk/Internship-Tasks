@@ -1,0 +1,140 @@
+.navigation {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+  .navbar {
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    @include media-tablet-down {
+      position: absolute;
+      overflow: auto;
+      padding: 0;
+
+      .navbar-brand {
+        padding: 1rem 0 1rem 1rem;
+      }
+    }
+
+    .navbar-toggler {
+      border-color: #fff !important;
+      margin-top: -5px;
+
+      &[aria-expanded="false"] {
+        .icon-close {
+          display: none;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        .icon-bar {
+          display: none;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      &.show {
+        .navbar-nav {
+          @include media-desktop-down {
+            padding-top: 45px;
+            padding-left: 3em;
+            align-self: flex-start;
+          }
+        }
+      }
+
+      .navbar-nav {
+        @include media-tablet-down {
+          padding-top: 45px;
+          padding-left: 3em;
+          align-self: flex-start;
+        }
+
+        .nav-item {
+          font-family: Comfortaa;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+
+          @include media-desktop-down {
+            font-size: 14px;
+          }
+
+          .nav-link {
+            color: $color-main;
+
+            &.btn-main {
+              color: #fff;
+              padding-left: 30px;
+              padding-right: 30px;
+
+              @include media-desktop-down {
+                max-width: 102px;
+              }
+            }
+          }
+
+          .active {
+            .nav-link {
+              color: $color-main !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    @include media-desktop-down {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+    }
+  }
+}
+
+#menu-soc-links{
+  margin-right: 50px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  
+
+  a {
+    margin-right: 10px;
+  }
+}
+
+.mobile-menu-img {
+  width: 100%;
+  background-image: url("../img/bg-img-mobile.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-opened {
+  overflow: hidden;
+  transform: scale(1);
+
+  .navbar-collapse-content {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.position-fixed {
+  position: fixed;
+}

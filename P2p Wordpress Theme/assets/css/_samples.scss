@@ -1,0 +1,179 @@
+.samples {
+  .paragraph {
+    max-width: 100%;
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  .samples_form {
+    margin-top: 80px;
+
+    .sample {
+      background: #ffffff;
+      box-shadow: 0px 4px 20px rgba(86, 68, 147, 0.15);
+      border-radius: 9px;
+      padding: 20px 33px;
+
+      @include media-tablet-down {
+        flex-direction: column;
+      }
+    }
+
+    .sample-name {
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      color: $color-main;
+    }
+
+    .sample-btn {
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      padding: 10px 30px;
+      border-color: $color-main;
+
+      @include media-tablet-down {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .card {
+    border-radius: 9px;
+    border: unset !important;
+  }
+
+  .fllying-objects {
+    position: absolute;
+
+    &.left-side {
+      top: 250px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &.right-side {
+      bottom: 50px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.main-table {
+  box-shadow: 0px 4px 20px rgba(86, 68, 147, 0.15) !important;
+
+  table {
+    counter-reset: row-num;
+
+    tbody tr {
+      counter-increment: row-num;
+
+      th {
+        text-align: center;
+        &::before {
+          content: counter(row-num);
+        }
+
+        @include media-tablet-down {
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f4efff !important;
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+    border-top: unset !important;
+  }
+
+  thead {
+    background-color: $color-main;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include media-tablet-down {
+      font-size: 14px;
+    }
+  }
+
+  .table-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include media-tablet-down {
+      font-size: 14px;
+    }
+  }
+
+  .student-name {
+    color: $color-main;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  .student-class,
+  .student-direction,
+  .form-date {
+    color: #818181;
+    margin-bottom: 0;
+  }
+
+  .form-name {
+    color: $color-main;
+  }
+
+  .status-waiting {
+    color: #818181;
+  }
+
+  .status-approved {
+    color: #0fba00;
+  }
+
+  .status-rejected {
+    color: #c80000;
+  }
+}
+
+.heading-smaller {
+  font-size: 24px;
+
+  span {
+    color: #adaaaa;
+  }
+
+  .form-counter {
+    font-size: 16px;
+  }
+}
+
+.btn-load {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #564493;
+  margin-left: 8%;
+  margin-top: 16px;
+}
